@@ -28,7 +28,7 @@ console()
 */
 
 
-@inline(__always) func console<T> (
+@inline(__always) public func console<T> (
   value: T,
   file: String = __FILE__,
   function: String = __FUNCTION__,
@@ -59,6 +59,6 @@ console()
   This is a wrapper of `console` function to use without arguments.
   Just print the current file, function in scope and line number.
 */
-@inline(__always) func console(file aFile: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) -> Void {
+@inline(__always) public func console(file aFile: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) -> Void {
   console("", file: aFile, function: function, line: line)
 }
