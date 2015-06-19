@@ -8,11 +8,11 @@ Pod::Spec.new do |spec|
   spec.authors = { 'Jan Cassio' => 'hey@jancassio.com' }
   spec.source = { :git => 'https://github.com/jancassio/SweetConsole.git', :tag => spec.version }
 
-  spec.ios.deployment_target = '7.0'
+  spec.ios.deployment_target = '8.0'
   spec.osx.deployment_target = '10.10'
 
   spec.source_files = "Console.swift"
-  
+
   spec.requires_arc = true
 
 end
