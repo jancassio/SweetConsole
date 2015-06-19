@@ -28,7 +28,7 @@ console()
 */
 
 
-@inline(__always) func console<T> (
+@inline(__always) public func console<T> (
   value: T,
   file: String = __FILE__,
   function: String = __FUNCTION__,
