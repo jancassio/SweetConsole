@@ -16,15 +16,19 @@ At your bridge header file, add the line below:
 `#import <SweetConsole/SweetConsole-Swift.h>`
 
 #### Option 2: Import `SweetConsole` to your file:
-`import SweetConsole`
+```swift
+import SweetConsole
+```swift
 
 ## Using
 
-    console("Hello World") // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] Hello World
+```swift
+console("Hello World") // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] Hello World
 
-    console() // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ]
+console() // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ]
 
-    console(SomeObject) // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] SomeObject.description output
+console(SomeObject) // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] SomeObject.description output
+```swift
 
 
 ## License
