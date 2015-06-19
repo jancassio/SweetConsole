@@ -8,14 +8,25 @@ Yes, is very inspired in the classic `DLog` function (see more [here](http://sta
 
 ## How to use?
 
-    
+### Import first
+
+#### Option 1:  Add `SweetConsole` as global framework (better choice).
+At your bridge header file, add the line below:
+
+`#import <SweetConsole/SweetConsole-Swift.h>`
+
+#### Option 2: Import `SweetConsole` to your file:
+`import SweetConsole`
+
+## Using
+
     console("Hello World") // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] Hello World
-    
+
     console() // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ]
-    
+
     console(SomeObject) // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] SomeObject.description output
-    
-  
+
+
 ## License
 
 Copyright (c) 2015 Jan Cassio. All rights reserved.
@@ -37,4 +48,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-  
