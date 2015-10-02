@@ -1,3 +1,8 @@
+[![Twitter: @jancassio](https://img.shields.io/badge/contact-@jancassio-blue.svg?style=flat)](https://twitter.com/jancassio)
+[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/jancassio/SweetHMAC/blob/master/LICENSE)
+![Version](https://cocoapod-badges.herokuapp.com/v/SweetConsole/badge.png)
+![Platforms](https://cocoapod-badges.herokuapp.com/p/SweetConsole/badge.png)
+
 # SweetConsole
 SweetConsole is a stupid simple global function for Swift, to print messages in Xcode's console with some more useful information.
 
