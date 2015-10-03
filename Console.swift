@@ -24,7 +24,7 @@ You can simply call console without argument too.
 
 console()
 
-:param: message    A message to print to console (optional).
+- parameter message:    A message to print to console (optional).
 */
 
 
@@ -34,30 +34,26 @@ console()
   function: String = __FUNCTION__,
   line: Int = __LINE__
   ) -> Void {
-
+    
     func time() -> String {
       let calendar: NSCalendar = NSCalendar.currentCalendar()
       let date: NSDate = NSDate()
       let components: NSDateComponents = calendar.components(
-        .CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitSecond,
+        [.Hour, .Minute, .Second],
         fromDate: date
       )
-
-      let hour = components.hour
-      let minute = components.minute
-      let second = components.second
-
-      return "\(hour):\(minute)::\(second)"
+      
+      return "\( components.hour ):\( components.minute )::\( components.second )"
     }
-
-    let filename = file.lastPathComponent.stringByDeletingPathExtension
-
-    println( "(\(time())) [ \( filename ).\(function) L:\(line) ] \(value)" )
+    
+    let filename = ((file as NSString).lastPathComponent as NSString).stringByDeletingPathExtension
+    
+    print( "(\(time())) [ \( filename ).\(function) L:\(line) ] \(value)\n", terminator: "" )
 }
 
 /**
-  This is a wrapper of `console` function to use without arguments.
-  Just print the current file, function in scope and line number.
+This is a wrapper of `console` function to use without arguments.
+Just print the current file, function in scope and line number.
 */
 @inline(__always) public func console(file aFile: String = __FILE__, function: String = __FUNCTION__, line: Int = __LINE__) -> Void {
   console("", file: aFile, function: function, line: line)
