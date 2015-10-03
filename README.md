@@ -4,7 +4,7 @@
 ![Platforms](https://cocoapod-badges.herokuapp.com/p/SweetConsole/badge.png)
 
 # SweetConsole
-SweetConsole is a stupid simple global function for Swift, to print messages in Xcode's console with some more useful information.
+SweetConsole is a stupid simple global function for Swift to print messages in Xcode's console with some more useful information.
 
 Yes, is very inspired in the classic `DLog` function (see more [here](http://stackoverflow.com/questions/969130/how-to-print-out-the-method-name-and-line-number-and-conditionally-disable-nslog))
 
@@ -23,7 +23,7 @@ At your bridge header file, add the line below:
 #### Option 2: Import `SweetConsole` to your file:
 ```swift
 import SweetConsole
-```swift
+```
 
 ## Using
 
@@ -33,7 +33,11 @@ console("Hello World") // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) 
 console() // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ]
 
 console(SomeObject) // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] SomeObject.description output
-```swift
+```
+
+## Advice for Swift 1.x users
+
+To use SweetConsole properly, you have to use version 1.0, simple do a `git checkout tags/1.0` after clone SweetConsole source.
 
 
 ## License
