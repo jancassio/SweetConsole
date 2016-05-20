@@ -13,19 +13,25 @@ Yes, is very inspired in the classic `DLog` function (see more [here](http://sta
 
 ## How to use?
 
-### Import first
+## Install
 
-#### Option 1:  Add `SweetConsole` as global framework (better choice).
-At your bridge header file, add the line below:
+### Cocoapods
+`pod "SweetConsole"`
 
-`#import <SweetConsole/SweetConsole-Swift.h>`
+### Source
+Simple add `Console.swift` to your project
 
-#### Option 2: Import `SweetConsole` to your file:
+### Import
+
+If you choose to use **SweetConsole** with [CocoaPods](https://cocoapods.org), just import `SweetConsole` in each file you would like use `console` function:
+
 ```swift
 import SweetConsole
 ```
 
-## Using
+Otherwise, you choose to use `Console.swift` file directly in you project, the `console` function will be available globaly in your project.
+
+## Some usage examples
 
 ```swift
 console("Hello World") // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] Hello World
@@ -38,7 +44,6 @@ console(SomeObject) // "(hh:mm::ss) [ FileName.currentMethod L:(currentLine) ] S
 ## Advice for Swift 1.x users
 
 To use SweetConsole properly, you have to use version 1.0, simple do a `git checkout tags/1.0` after clone SweetConsole source.
-
 
 ## License
 
