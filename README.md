@@ -15,21 +15,23 @@ Yes, is very inspired in the classic `DLog` function (see more [here](http://sta
 
 ## Install
 
-### Cocoapods
+### With Cocoapods
 `pod "SweetConsole"`
 
-### Source
-Simple add `Console.swift` to your project
-
-### Import
-
-If you choose to use **SweetConsole** with [CocoaPods](https://cocoapods.org), just import `SweetConsole` in each file you would like use `console` function:
+To use **SweetConsole** with [CocoaPods](https://cocoapods.org), just import `SweetConsole` in each file you would like use `console` function:
 
 ```swift
 import SweetConsole
 ```
 
-Otherwise, you choose to use `Console.swift` file directly in you project, the `console` function will be available globaly in your project.
+---
+
+### From the Source
+Simple add `Console.swift` to your project
+
+The `console` function will be available globaly in your project.
+
+---
 
 ## Some usage examples
 
